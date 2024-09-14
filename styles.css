@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #050505,#080808f0);
     padding: 10px;
 }
 img{
@@ -52,11 +52,16 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
-    color: #fff;
+    background: #050003c4;
+    color: #626161d8;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background: #111111; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly increase the size of the button */
 }
 ul li{
     list-style: none;
@@ -97,10 +102,10 @@ ul li span{
     right: 10px;
     top: 50%;
     transform: translateY(-50%); 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
@@ -123,7 +128,7 @@ ul li span:active{
 .progress-bar {
     width: 0%;
     height: 100%;
-    background: #4CAF50;
+    background: #0a0a0ac5;
     border-radius: 10px;
     transition: width 0.3s ease-in-out;
 }
