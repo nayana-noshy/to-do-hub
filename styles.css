@@ -60,8 +60,8 @@ button{
     transition: background 0.3s ease, transform 0.3s ease;
 }
 button:hover {
-    background: #111111; /* Change background color on hover */
-    transform: scale(1.05); /* Slightly increase the size of the button */
+    background: #111111; 
+    transform: scale(1.05); 
 }
 ul li{
     list-style: none;
@@ -70,8 +70,8 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
-    display: flex;            /* Use flexbox for the list item */
-    justify-content: space-between; /* Space out content */
+    display: flex;            
+    justify-content: space-between; 
     align-items: center;  
 }
 ul li::before{
