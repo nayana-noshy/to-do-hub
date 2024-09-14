@@ -38,7 +38,7 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
     updateProgress();
 }
-//showTask();
+
 function updateProgress() {
     const allTasks = document.querySelectorAll('#list-container li');
     const completedTasks = document.querySelectorAll('#list-container li.checked');
@@ -46,11 +46,11 @@ function updateProgress() {
     const totalTasks = allTasks.length;
     const completedPercentage = totalTasks === 0 ? 0 : (completedTasks.length / totalTasks) * 100;
 
-    // Update progress bar
+    
     const progressBar = document.querySelector('.progress-bar');
     progressBar.style.width = `${completedPercentage}%`;
 
-    // Update percentage text
+
     const percentageText = document.querySelector('.percentage-text');
     percentageText.textContent = `${Math.round(completedPercentage)}% Completed`;
 }
